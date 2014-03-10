@@ -1,6 +1,6 @@
 
-/*
- * GET home page.
+/**
+ * 首页
  */
 
 exports.index = function(req, res){
