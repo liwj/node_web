@@ -33,3 +33,9 @@ exports.doReg = function(req,res){
 exports.doLogin = function(req,res){
 	
 };
+/**
+ * 用户登出
+ */
+exports.logout = function(req,res){
+	
+};

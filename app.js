@@ -6,6 +6,7 @@
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
+var weibo = require('./routes/weibo');
 var http = require('http');
 var path = require('path');
 
@@ -29,14 +30,13 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);//首页
-app.get('/u/:user', routes.user);//个人主页
-app.get('/post', routes.post);//发表信息
-app.get('/reg', routes.reg);//注册
-app.get('/reg', routes.doReg);
-app.get('/login', routes.login);//登录
-app.get('/login', routes.doLogin);
-app.get('/logout', routes.logout);//退出
-app.get('/users', user.list);
+app.get('/u/:user', user.user);//个人主页
+app.get('/post', weibo.post);//发表信息
+app.get('/reg', user.reg);//注册
+app.get('/reg', user.doReg);
+app.get('/login', user.login);//登录
+app.get('/login', user.doLogin);
+app.get('/logout', user.logout);//退出
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
