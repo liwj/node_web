@@ -13,7 +13,7 @@ exports.user = function(req,res){
  * 用户注册 
  */
 exports.reg = function(req,res){
-	
+	res.render('reg');
 };
 /**
  * 用户登录
