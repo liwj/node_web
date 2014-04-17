@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>注册微博，这里有你更精彩</title>
+		<mate name="viewport" content="width=device-width,initial-scale=1.0"></mate>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></mate>
+    	<link rel="shortcut icon" href="/images/logo.jpg"/>
+		<link rel="stylesheet" href='/stylesheets/bootstrap-theme.css' />
+		<link rel="stylesheet" href='/stylesheets/bootstrap.css' />
+	</head>
+	<body>
+		<!--<form method="post" action="reg">
+			<div class="form-group has-success">
+				<lable for="u_name">用户名</lable>
+				<input type="text" id="u_name" class="form-control" placeholder="请输入你的昵称"/>
+			</div>
+			<div class="form-group">
+				<lable for="u_pass">密&nbsp;码</label>
+				<input type="password" id="u_pass" class="form-control" placeholder="请输入你的密码"/>
+			</div>	
+			<div class="form-group">
+				<lable for="ue_pass">确认密码</label>
+				<input type="password" id="ue_pass" class="form-control" placeholder="请确认你的密码"/>
+			</div>	
+			<div class="form-group">
+				<lable for="u_mail">E-Mail</label>
+				<input type="email" id="u_mail" class="form-control" placeholder="请输入你的邮箱"/>
+			</div>
+			<button type="submit" class="btn btn-default">立即注册</button>	
+		</form>-->
+		<form class="form-horizontal" method="post">
+			<fieldset>
+				<legend>用户注册</legend>
+				<div class="control-group">
+					<label class="control-label" for="u_name">用户名</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="u_name" name="username"></input>
+						<p class="help-block">你的账户名称</p>
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">注册</button>
+				</div>
+			</fieldset>
+		</form>
+		
+		<script type="text/javascript" src='/javascripts/jquery-2.1.0.min.js'></script>
+    	<script type="text/javascript" src='/javascripts/bootstrap.min.js'></script>
+	</body>
+</html>

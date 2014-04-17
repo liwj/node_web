@@ -13,7 +13,7 @@ exports.user = function(req,res){
  * 用户注册 
  */
 exports.reg = function(req,res){
-	res.render('reg');//跳转到那个页面
+	res.render('user/reg');//跳转到那个页面
 };
 /**
  * 用户登录
@@ -25,7 +25,7 @@ exports.login = function(req,res){
  * 用户注册处理
  */
 exports.doReg = function(req,res){
-	
+	res.render('index');//跳转到那个页面
 };
 /**
  * 用户登录处理
